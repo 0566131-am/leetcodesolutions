@@ -1,0 +1,16 @@
+            temp = temp / 10;
+            rev = rev * 10 + digit;
+        }
+
+        if (rev > Integer.MAX_VALUE || rev < Integer.MIN_VALUE) {
+            return 0;
+        }
+
+        return (int) rev;
+            int digit = temp % 10;
+        while (temp != 0) {
+        int temp = n;
+
+    public int reverse(int n) {
+        long rev = 0;
+class Solution {
