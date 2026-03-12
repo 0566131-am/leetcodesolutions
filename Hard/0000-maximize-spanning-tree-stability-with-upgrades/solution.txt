@@ -1,5 +1,16 @@
-class Solution {
-    public int maxStability(int n, int[][] edges, int k) {
-        
+        for (int[] e : upgradeCandidates) {
+
+            if (usedEdges == n - 1) break;
+            if (upgrades >= k) break;
+
+            int u = e[0], v = e[1];
+
+            if (dsu.union(u, v)) {
+                usedEdges++;
+                upgrades++;
+            }
+        }
+
+        return usedEdges == n - 1;
     }
 }
