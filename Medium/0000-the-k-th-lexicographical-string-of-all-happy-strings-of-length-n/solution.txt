@@ -1,0 +1,16 @@
+    private void backtrack(int n, String current, List<String> list) {
+        if (current.length() == n) {
+            list.add(current);
+            return;
+        }
+
+        char[] chars = {'a', 'b', 'c'};
+
+        for (char c : chars) {
+            if (current.length() > 0 && current.charAt(current.length() - 1) == c) {
+                continue;
+            }
+            backtrack(n, current + c, list);
+        }
+    }
+}
