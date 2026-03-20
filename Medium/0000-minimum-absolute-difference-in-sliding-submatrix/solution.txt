@@ -1,0 +1,17 @@
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌}
+
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌Collections.sort(list);
+
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌int·‌minDiff·‌=·‌Integer.MAX_VALUE;
+
+                        list.add(grid[x][y]);
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌}
+                    for (int y = j; y < j + k; y++) {
+                for (int x = i; x < i + k; x++) {
+                // collect k x k elements
+
+                List<Integer> list = new ArrayList<>();
+
+            for (int j = 0; j <= n - k; j++) {
+        for (int i = 0; i <= m - k; i++) {
+
