@@ -1,0 +1,16 @@
+        }
+            min[i][0] = max[i][0];
+            max[i][0] = max[i-1][0] * grid[i][0];
+        for (int i = 1; i < m; i++) {
+        // First column
+        
+        min[0][0] = grid[0][0];
+        max[0][0] = grid[0][0];
+        int m = grid.length;
+        int n = grid[0].length;
+        
+        long[][] max = new long[m][n];
+        long[][] min = new long[m][n];
+        
+class Solution {
+    public int maxProductPath(int[][] grid) {
