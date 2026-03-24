@@ -1,0 +1,15 @@
+class Solution:
+    def constructProductMatrix(self, grid):
+        MOD = 12345
+        m, n = len(grid), len(grid[0])
+        
+        # Flatten grid
+        arr = []
+        for row in grid:
+            arr.extend(row)
+        
+        size = len(arr)
+        
+        # Prefix
+        prefix = [1] * size
+        for i in range(1, size):
