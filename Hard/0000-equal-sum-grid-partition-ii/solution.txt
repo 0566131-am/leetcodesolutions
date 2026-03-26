@@ -1,5 +1,15 @@
-class Solution {
-    public boolean canPartitionGrid(int[][] grid) {
-        
+        if (rows * cols == 1) return false;
+
+        // 1D row
+        if (rows == 1) {
+            return grid[r1][c1] == diff || grid[r1][c2] == diff;
+        }
+
+        // 1D column
+        if (cols == 1) {
+            return grid[r1][c1] == diff || grid[r2][c1] == diff;
+        }
+
+        return mp.getOrDefault(diff, 0) > 0;
     }
 }
