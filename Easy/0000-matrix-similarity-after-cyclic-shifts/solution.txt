@@ -1,5 +1,15 @@
-class Solution {
-    public boolean areSimilar(int[][] mat, int k) {
-        
+                    if (row[j] != row[(j + k) % n]) {
+                        return false;
+                    }
+                } else {
+                    // odd row → right shift
+                    if (row[j] != row[(j - k + n) % n]) {
+                        return false;
+                    }
+                }
+            }
+        }
+
+        return true;
     }
 }
