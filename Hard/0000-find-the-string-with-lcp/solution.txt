@@ -1,5 +1,15 @@
-class Solution {
-    public String findTheString(int[][] lcp) {
+        s = ['?'] * n
+        curr_char = 'a'
         
-    }
-}
+        # Step 2: Build string
+                    return ""
+                if lcp[i][j] != lcp[j][i]:
+                return ""
+            for j in range(n):
+            if lcp[i][i] != n - i:
+        for i in range(n):
+        # Step 1: Validate diagonal and symmetry
+        
+        n = len(lcp)
+    def findTheString(self, lcp):
+class Solution:
