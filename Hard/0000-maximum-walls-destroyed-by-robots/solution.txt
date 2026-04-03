@@ -1,0 +1,15 @@
+            int leftEnd = x[i][0];
+
+            int overlapStart = leftStart;
+            int overlapEnd = Math.min(x[i - 1][0] + x[i - 1][1], x[i][0] - 1);
+
+            int res = dp[i - 1][1]
+                      + query.apply(leftStart, leftEnd)
+                      - query.apply(overlapStart, overlapEnd);
+
+            dp[i][0] = Math.max(dp[i][0], res);
+        }
+
+        return Math.max(dp[n - 1][0], dp[n - 1][1]);
+    }
+}
