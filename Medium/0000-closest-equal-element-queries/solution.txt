@@ -1,15 +1,15 @@
-            for (int idx : list) {
-                if (idx == q) continue;
+            dist1 = Math.min(dist1, n - dist1);
 
-                int dist = Math.abs(idx - q);
-                dist = Math.min(dist, n - dist); // circular
+            // check next
+            int next = list.get((idx + 1) % size);
+            int dist2 = Math.abs(q - next);
+            dist2 = Math.min(dist2, n - dist2);
 
-                minDist = Math.min(minDist, dist);
-            }
+            minDist = Math.min(dist1, dist2);
 
-            result.add(minDist);
+            res.add(minDist);
         }
 
-        return result;
+        return res;
     }
 }
