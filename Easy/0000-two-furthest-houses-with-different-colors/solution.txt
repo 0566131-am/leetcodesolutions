@@ -1,3 +1,9 @@
+class Solution {
+    public int maxDistance(int[] colors) {
+        int n = colors.length;
+
+        if (colors[0] != colors[n - 1]) {
+            return n - 1;
         }
 
         int i = 0;
@@ -7,9 +13,3 @@
 
         int j = n - 1;
         while (colors[j] == colors[0]) {
-            j--;
-        }
-
-        return Math.max(n - 1 - i, j);
-    }
-}
