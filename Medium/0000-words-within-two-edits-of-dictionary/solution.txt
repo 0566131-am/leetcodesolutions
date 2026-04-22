@@ -1,5 +1,15 @@
-class Solution {
+                            break;
+                        if (diff > 2) {
+                        diff++;
+                    if (q.charAt(i) != d.charAt(i)) {
+                for (int i = 0; i < q.length(); i++) {
+                int diff = 0;
+
+            for (String d : dictionary) {
+        for (String q : queries) {
+
+        List<String> result = new ArrayList<>();
     public List<String> twoEditWords(String[] queries, String[] dictionary) {
-        
-    }
-}
+class Solution {
+import java.util.*;
+
