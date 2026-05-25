@@ -1,4 +1,4 @@
-# 175. Combine Two Tables
+# Q1. Combine Two Tables
 
 🟢 **Difficulty:** Easy  
 💻 **Language:** Sort by:  
