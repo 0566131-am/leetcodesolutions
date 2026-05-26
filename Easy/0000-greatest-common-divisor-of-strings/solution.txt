@@ -1,5 +1,14 @@
-class Solution {
-    public String gcdOfStrings(String str1, String str2) {
+            if a == 0:
+                return b
+            else:
+                return a
         
-    }
-}
+        
+        if str1 + str2 != str2 + str1:
+            return ""
+        
+    
+        gcd_length = gcd(len(str1), len(str2))
+        
+       
+        return str1[:gcd_length]
