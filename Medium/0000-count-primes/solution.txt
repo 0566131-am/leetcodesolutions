@@ -1,16 +1,16 @@
-        return count;
+                    isComposite[j] = true;
+                }
+            }
         }
+        for (int i = 2; i < n; i++) {
+                for (int j = i * i; j < n; j += i) {
+        int count = 0;
+        for (int i = 2; i * i < n; i++) {
+            if (!isComposite[i]) {
         }
-            count++;
-        if(i+2<n&&isprime(i+2)){
-        }
-            count++;
-            if(isprime(i)){
-        for(int i=5;i<n;i=i+6){
-        int count=2;
-        return 1;
-        if(n==3)
-        return 0;
-        if(n<=2)
+        
+        boolean[] isComposite = new boolean[n];
+            return 0;
     public int countPrimes(int n) {
+        if (n <= 2) {
 class Solution {
