@@ -1,3 +1,16 @@
-class Solution:
-    def countPrimes(self, n: int) -> int:
-        
+        return count;
+        }
+        }
+            count++;
+        if(i+2<n&&isprime(i+2)){
+        }
+            count++;
+            if(isprime(i)){
+        for(int i=5;i<n;i=i+6){
+        int count=2;
+        return 1;
+        if(n==3)
+        return 0;
+        if(n<=2)
+    public int countPrimes(int n) {
+class Solution {
