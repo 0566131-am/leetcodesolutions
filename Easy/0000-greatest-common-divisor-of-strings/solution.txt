@@ -11,4 +11,4 @@
         gcd_length = gcd(len(str1), len(str2))
         
        
-        return str1[:gcd_length]
+        return str1[0:gcd_length]
