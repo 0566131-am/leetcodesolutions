@@ -1,15 +1,12 @@
             slow=slow.next;
             fast=fast.next.next;
+        while(fast!=null&&fast.next!=null){
             if(slow==fast){
                 return true;
             }
            
         }
+        return false;
         
     }
-        while(fast!=null&&fast.next!=null){
-        ListNode slow=head;
-       ListNode fast=head;
-    public boolean hasCycle(ListNode head) {
-        return false;
 }
