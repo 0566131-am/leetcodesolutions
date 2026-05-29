@@ -1,16 +1,15 @@
+       ListNode slow =temp;
+       temp.next=head;
+       ListNode fast=temp;
        for(int i=0;i<=n;i++){
         fast=fast.next;
        }
        while(fast!=null){
         fast=fast.next;
-       ListNode slow =temp;
-       temp.next=head;
-       ListNode fast=temp;
-    public ListNode removeNthFromEnd(ListNode head, int n) {
-       ListNode temp= new ListNode(0);
-class Solution {
- */
- * }
         slow=slow.next;
        }
        slow.next=slow.next.next;
+       return temp.next;
+    }
+
+}
