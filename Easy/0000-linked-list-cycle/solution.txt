@@ -1,12 +1,15 @@
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
-public class Solution {
-    public boolean hasCycle(ListNode head) {
+            slow=slow.next;
+            fast=fast.next.next;
+            if(slow==fast){
+                return true;
+            }
+           
+        }
         
     }
+        while(fast!=null&&fast.next!=null){
+        ListNode slow=head;
+       ListNode fast=head;
+    public boolean hasCycle(ListNode head) {
+        return false;
 }
