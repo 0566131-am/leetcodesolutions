@@ -1,3 +1,4 @@
+    public ListNode middleNode(ListNode head) {
         ListNode slow=head;
         ListNode fast=head;
         while(fast !=null && fast.next!=null ){
@@ -10,7 +11,3 @@
         
     }
 }
-    public ListNode middleNode(ListNode head) {
-class Solution {
- */
- * }
