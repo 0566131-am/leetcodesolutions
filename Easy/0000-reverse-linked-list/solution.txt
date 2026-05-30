@@ -1,12 +1,6 @@
         ListNode temp=head;
         while(temp!=null){
             ListNode t3=temp.next;
-        ListNode prev=null;
- * }
- */
-class Solution {
-    public ListNode reverseList(ListNode head) {
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
             temp.next=prev;
             prev=temp;
             temp=t3;
@@ -14,4 +8,10 @@ class Solution {
         return prev;
 
         
-    }
+        ListNode prev=null;
+    public ListNode reverseList(ListNode head) {
+class Solution {
+ */
+ * }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ *     ListNode(int val) { this.val = val; }
