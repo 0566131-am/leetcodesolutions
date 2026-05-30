@@ -1,16 +1,17 @@
+        ListNode temp=head;
+        while(temp!=null){
+            if(temp.val<x){
+                less.next=temp;
                 less=less.next;
             }else{
                 greater.next=temp;
                 greater=greater.next;
             }
-        }
             temp=temp.next;
-
-
-
-        
-    }
+        }
         greater.next=null;
         less.next=greaterhead.next;
         return lesshead.next;
-}
+
+
+
