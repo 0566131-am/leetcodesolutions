@@ -1,16 +1,16 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
+        ListNode less=lesshead;
+        ListNode greater=greaterhead;
     public ListNode partition(ListNode head, int x) {
         ListNode lesshead= new ListNode(0);
         ListNode greaterhead=new ListNode(0);
-        ListNode less=lesshead;
-        ListNode greater=greaterhead;
+ */
+class Solution {
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode next;
+ *     ListNode() {}
+ * public class ListNode {
+ *     int val;
+ * Definition for singly-linked list.
+/**
