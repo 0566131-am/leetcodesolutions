@@ -1,4 +1,3 @@
-        Arrays.sort(nums);
         int left=0;
         long currentsum=0;
         for(int right=0;right<nums.length;right++){
@@ -12,5 +11,6 @@
                 left++;
         return nums.length-left;
 }
+        Arrays.sort(nums);
     public int maxFrequency(int[] nums, int k) {
 class Solution {
