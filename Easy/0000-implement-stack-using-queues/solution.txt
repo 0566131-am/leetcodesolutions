@@ -1,14 +1,19 @@
-    public int top() {
+        
+    }
+    
+    public void push(int x) {
+        queue.add(x);
+        int size=queue.size();
+        while(size>1){
+            queue.add(queue.remove());
+            size--;
+
+        }
         
     }
     
     public int pop() {
         return queue.remove();
-    
-    }
         
-        }
-
-            size--;
-            queue.add(queue.remove());
-        while(size>1){
+    }
+    
