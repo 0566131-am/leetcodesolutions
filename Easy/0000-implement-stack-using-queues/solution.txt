@@ -1,25 +1,14 @@
+    public int top() {
         
-    }
-    
-        return queue.remove();
     }
     
     public int pop() {
-
-        }
-        
-            size--;
-        int size=queue.size();
-        while(size>1){
-            queue.add(queue.remove());
-        queue.add(x);
-    public void push(int x) {
+        return queue.remove();
     
     }
         
-        queue=new LinkedList<>();
-    public MyStack() {
-     private Queue<Integer> queue;
-class MyStack {
-import java.util.Queue;
-import java.util.LinkedList;
+        }
+
+            size--;
+            queue.add(queue.remove());
+        while(size>1){
