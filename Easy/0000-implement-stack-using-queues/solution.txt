@@ -1,26 +1,25 @@
-class MyStack {
-
-    public MyStack() {
         
     }
     
-    public void push(int x) {
-        
+        return queue.remove();
     }
     
     public int pop() {
-        
-    }
-    
-    public int top() {
-        
-    }
-    
-    public boolean empty() {
-        
-    }
-}
 
-/**
- * Your MyStack object will be instantiated and called as such:
- * MyStack obj = new MyStack();
+        }
+        
+            size--;
+        int size=queue.size();
+        while(size>1){
+            queue.add(queue.remove());
+        queue.add(x);
+    public void push(int x) {
+    
+    }
+        
+        queue=new LinkedList<>();
+    public MyStack() {
+     private Queue<Integer> queue;
+class MyStack {
+import java.util.Queue;
+import java.util.LinkedList;
