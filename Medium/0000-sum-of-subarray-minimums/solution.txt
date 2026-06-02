@@ -1,17 +1,18 @@
-class Solution {
-    public int sumSubarrayMins(int[] arr) {
+        }
+        for (int i = 0; i < n; i++) {
+            long leftDistance = i - pse[i];
+            long rightDistance = nse[i] - i;
+            
+            long totalSubarrays = leftDistance * rightDistance;
+            nse[i] = stack.isEmpty() ? n : stack.peek();
+            stack.push(i);
+            }
+                stack.pop();
+            while (!stack.isEmpty() && arr[stack.peek()] > arr[i]) {
+        for (int i = n - 1; i >= 0; i--) {
+        stack.clear(); 
 
-     int n=arr.length;
-     long sumtotal=0;
-     long mod = 1_000_000_007;
-     for(int i=0;i<n;i++){
-        long cumin=arr[i];
-     for(int j=i;j<n;j++){
-        cumin=Math.min(cumin,arr[j]);
-     sumtotal=(sumtotal+cumin)%mod;
-     }
-     }
-     return(int) sumtotal;
-        
-    }
-
+        }
+            stack.push(i);
+            pse[i] = stack.isEmpty() ? -1 : stack.peek();
+            }
