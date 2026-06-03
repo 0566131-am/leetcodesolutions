@@ -1,19 +1,19 @@
-            stack.pop();
+    public String removeKdigits(String num, int k) {
+        if(k==num.length()){
+            return "0";
         }
-            k--;
-        StringBuilder sb=new StringBuilder();
-        while(k>0){
-        }
-            stack.push(currentDigit);
-            }
-                k--;
+        Stack<Character> stack=new Stack<>();
+        for(int i=0;i<num.length();i++){
+            char currentDigit=num.charAt(i);
             while(!stack.isEmpty()&&k>0&&stack.peek()>currentDigit){
                 stack.pop();
-            char currentDigit=num.charAt(i);
-        for(int i=0;i<num.length();i++){
-        Stack<Character> stack=new Stack<>();
+                k--;
+            }
+            stack.push(currentDigit);
         }
-            return "0";
-        if(k==num.length()){
+        while(k>0){
+            stack.pop();
+            k--;
+        }
+        StringBuilder sb=new StringBuilder();
         while(!stack.isEmpty()){
-    public String removeKdigits(String num, int k) {
