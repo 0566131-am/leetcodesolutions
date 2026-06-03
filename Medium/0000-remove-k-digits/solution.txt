@@ -1,5 +1,19 @@
-class Solution {
+            stack.pop();
+        }
+            k--;
+        StringBuilder sb=new StringBuilder();
+        while(k>0){
+        }
+            stack.push(currentDigit);
+            }
+                k--;
+            while(!stack.isEmpty()&&k>0&&stack.peek()>currentDigit){
+                stack.pop();
+            char currentDigit=num.charAt(i);
+        for(int i=0;i<num.length();i++){
+        Stack<Character> stack=new Stack<>();
+        }
+            return "0";
+        if(k==num.length()){
+        while(!stack.isEmpty()){
     public String removeKdigits(String num, int k) {
-        
-    }
-}
