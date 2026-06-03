@@ -1,17 +1,18 @@
-            stack.push(i);
-        }
-                stack.pop();
-            }
-
-            pse[i] = stack.isEmpty() ? -1 : stack.peek();
-            while (!stack.isEmpty() && heights[stack.peek()] >= heights[i]) {
-        Deque<Integer> stack = new ArrayDeque<>();
-        for (int i = 0; i < n; i++) {
+class Solution {
+    public int largestRectangleArea(int[] heights) {
+        int n = heights.length;
+        int maxArea = 0;
         
         int[] pse = new int[n]; 
         int[] nse = new int[n]; 
         
-        int maxArea = 0;
-        int n = heights.length;
-    public int largestRectangleArea(int[] heights) {
-class Solution {
+        Deque<Integer> stack = new ArrayDeque<>();
+        for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && heights[stack.peek()] >= heights[i]) {
+                stack.pop();
+            }
+
+            pse[i] = stack.isEmpty() ? -1 : stack.peek();
+            stack.push(i);
+        }
+        
