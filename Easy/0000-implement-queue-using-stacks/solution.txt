@@ -10,4 +10,10 @@ class MyQueue {
     
     public int pop() {
         
+        
     }
+    
+    public int peek() {
+        
+    }
+    
