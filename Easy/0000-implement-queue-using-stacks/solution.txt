@@ -1,3 +1,5 @@
+    
+    public int peek() {
         if (out.isEmpty()) {
             while (!in.isEmpty()) {
                 out.push(in.pop());
@@ -6,5 +8,15 @@
         return out.peek();
         
     }
+        
+        
+        return out.pop();
+    public int pop() {
+      
     
-    public boolean empty() {
+        in.push(x);
+    }
+    public void push(int x) {
+    
+    }
+        out=new Stack<>();
