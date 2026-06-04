@@ -15,3 +15,4 @@ class RecentCounter {
         return queue.size();
         
     }
+}
