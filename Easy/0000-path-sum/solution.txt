@@ -1,12 +1,16 @@
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
  *         this.right = right;
  *     }
  * }
  */
 class Solution {
     public boolean hasPathSum(TreeNode root, int targetSum) {
-        
+        if(root==null){
+            return false;
+        }
+        if(root.left==null&&root.right==null){
+            return targetSum==root.val;
+        }
+        int rs=targetSum-root.val;
+        return hasPathSum(root.left,rs)||hasPathSum(root.right,rs);
     }
 }
