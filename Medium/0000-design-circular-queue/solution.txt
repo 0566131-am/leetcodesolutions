@@ -1,0 +1,14 @@
+class MyCircularQueue {
+
+    public MyCircularQueue(int k) {
+        
+    }
+    
+    public boolean enQueue(int value) {
+        
+    }
+    
+    public boolean deQueue() {
+        
+    }
+    
