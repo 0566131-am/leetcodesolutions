@@ -2,6 +2,7 @@
     private int getHeight(TreeNode node){
     if(node==null)
     return 0;
+        return dia;
   int lh=getHeight(node.left);
   int rh=getHeight(node.right);
   int cd=lh+rh;
@@ -9,4 +10,3 @@
   return Math.max(lh,rh)+1;    
     }
 }
-        return dia;
