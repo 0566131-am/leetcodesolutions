@@ -12,3 +12,4 @@ class Solution {
         int gd=maxDepth(root.right);
         return Math.max(ld,gd)+1;
         
+    }
