@@ -1,3 +1,6 @@
+    private int maxSum=Integer.MIN_VALUE;
+    public int maxPathSum(TreeNode root) {
+        maxSum = Integer.MIN_VALUE; 
         calculateGain(root);
         return maxSum;
     }
@@ -9,8 +12,6 @@
         int rg=Math.max(calculateGain(node.right),0);
         int cps=node.val+lg+rg;
         maxSum=Math.max(maxSum,cps);
-        maxSum = Integer.MIN_VALUE; 
-    public int maxPathSum(TreeNode root) {
-    private int maxSum=Integer.MIN_VALUE;
         return node.val+Math.max(lg,rg);
 
+    }
