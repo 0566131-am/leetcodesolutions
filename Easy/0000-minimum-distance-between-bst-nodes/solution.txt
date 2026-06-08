@@ -1,8 +1,12 @@
+ *         this.val = val;
+ *         this.left = left;
  *         this.right = right;
  *     }
  * }
  */
 class Solution {
+    private Integer pre = null; 
+    private int res = Integer.MAX_VALUE;
     public int minDiffInBST(TreeNode root) {
         if(root.left!=null)
         minDiffInBST(root.left);
@@ -14,6 +18,4 @@ class Solution {
         return res;
         
     }
-    private Integer pre = null; 
-    private int res = Integer.MAX_VALUE;
 }
