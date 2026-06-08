@@ -1,3 +1,8 @@
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
  *         this.val = val;
  *         this.left = left;
  *         this.right = right;
@@ -14,8 +19,3 @@ class Solution {
         res=Math.min(res,root.val-pre);
         pre=root.val;
         if(root.right!=null)
-        minDiffInBST(root.right);
-        return res;
-        
-    }
-}
