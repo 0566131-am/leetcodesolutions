@@ -1,18 +1,14 @@
-#         self.val = val
-#         self.left = left
-#         self.right = right
-class Solution:
-    def searchBST(self, root: Optional[TreeNode], val: int) -> Optional
-    [TreeNode]:
-        curr = root
+ * }
+ */
+class Solution {
+    public TreeNode searchBST(TreeNode root, int val) {
+        if(root==null||root.val==val){
+            return root;
+        }
+        if(val<root.val){
+            return searchBST(root.left,val);
+        }
+        return searchBST(root.right,val);
         
-        while curr:
-            if curr.val == val:
-                return curr  # Found the node
-            elif val < curr.val:
-                curr = curr.left  # Move left
-            else:
-                curr = curr.right  # Move right
-                
-        return None  # Value doesn't exist in the BST
-        
+    }
+}
