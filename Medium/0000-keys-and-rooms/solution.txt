@@ -1,5 +1,21 @@
-class Solution {
-    public boolean canVisitAllRooms(List<List<Integer>> rooms) {
+                if (!visited[key]) {
+                    visited[key] = true;
+                    count++;
+                    if (count == n) {
+                        return true;
+                    }
+                    queue.offer(key);
+                }
+            }
+        }
+        return count == n;
+            for (int key : rooms.get(currentRoom)) {
+            int currentRoom = queue.poll();
+        while (!queue.isEmpty()) {
         
-    }
-}
+        int count = 1;
+        visited[0] = true;
+        queue.offer(0);
+        // 
+        
+        Queue<Integer> queue = new LinkedList<>();
