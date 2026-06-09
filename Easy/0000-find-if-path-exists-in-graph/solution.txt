@@ -1,5 +1,15 @@
+            x = this.parent[x];
+        }     
+        this.parent[u] = x;
+        return x;
+    }
+}
 class Solution {
-    public boolean validPath(int n, int[][] edges, int source, int destination) {
-        
+    public boolean validPath(int n, int[][] edges, int start, int end) {
+        DisjointSetUnion set = new DisjointSetUnion(n);
+        for(int[] edge:edges){
+            set.union(edge[0], edge[1]);
+        }   
+        return set.areConnected(start, end);
     }
 }
