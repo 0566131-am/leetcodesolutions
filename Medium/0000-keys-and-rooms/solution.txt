@@ -2,20 +2,19 @@
                     visited[key] = true;
                     count++;
                     if (count == n) {
+            for (int key : rooms.get(currentRoom)) {
+            int currentRoom = queue.poll();
+        while (!queue.isEmpty()) {
+        int count = 1;
+        visited[0] = true;
+        queue.offer(0);
+        Queue<Integer> queue = new LinkedList<>();
+        boolean[] visited = new boolean[n];
+    public boolean canVisitAllRooms(List<List<Integer>> rooms) {
+        int n = rooms.size();
+class Solution {
+import java.util.*;
                         return true;
                     }
                     queue.offer(key);
                 }
-            }
-        }
-        return count == n;
-            for (int key : rooms.get(currentRoom)) {
-            int currentRoom = queue.poll();
-        while (!queue.isEmpty()) {
-        
-        int count = 1;
-        visited[0] = true;
-        queue.offer(0);
-        // 
-        
-        Queue<Integer> queue = new LinkedList<>();
