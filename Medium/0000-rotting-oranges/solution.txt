@@ -1,7 +1,8 @@
                     int nr = r + dirs[d];
                     int nc = c + dirs[d + 1];
 
-                    if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && grid[nr][nc] == 1) {
+                    if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && grid
+                    [nr][nc] == 1) {
                         grid[nr][nc] = 2;
                         freshOranges--;
                         queue.offer(nr * cols + nc);
