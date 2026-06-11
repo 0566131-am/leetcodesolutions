@@ -1,6 +1,19 @@
-class Solution {
+                left = mid + 1; 
+            } else {
+                right = mid - 1;
+                result = mid;   
+            if (canEatAll(piles, h, mid)) {
+            
+            int mid = left + (right - left) / 2;
+        while (left <= right) {
+        int result = right;
+        
+        }
+            right = Math.max(right, pile);
+        for (int pile : piles) {
+        int right = 0;
+        int left = 1;
     public int minEatingSpeed(int[] piles, int h) {
-        
-        
-    }
-}
+class Solution {
+            }
+        }
