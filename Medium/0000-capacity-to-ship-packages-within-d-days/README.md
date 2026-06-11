@@ -1,9 +1,9 @@
-# 1011. Capacity To Ship Packages Within D Days
+# Capacity To Ship Packages Within D Days
 
 🟡 **Difficulty:** Medium  
-💻 **Language:** Sort by:  
+💻 **Language:** Python3  
 🔗 **LeetCode:** https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
 
 ## Solution
 
-See `solution.txt`
+See `solution.py`
