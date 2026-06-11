@@ -1,6 +1,17 @@
-class Solution {
-    public int shortestPathBinaryMatrix(int[][] grid) {
+                        // Quick optimization check: if this neighbor is the destination, we can exit 
+                        early!
+                        if (nr == n - 1 && nc == n - 1) {
+                            return pathLength + 1;
+                        }
+                        
+                        queue.offer(new int[]{nr, nc});
+                        grid[nr][nc] = 1; // Mark as visited immediately when pushing to the queue
+                    }
+                }
+            }
+            pathLength++;
+        }
         
-        
+        return -1; // Destination is unreachable
     }
 }
