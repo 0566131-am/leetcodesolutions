@@ -1,3 +1,4 @@
+class Solution {
     public int[] fullBloomFlowers(int[][] flowers, int[] people) {
         int f = flowers.length, p = people.length,
             st[] = new int[f], en[] = new int[f];
@@ -16,4 +17,3 @@
         return ans;
     }
 }
-class Solution {
