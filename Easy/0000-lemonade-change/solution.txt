@@ -1,15 +1,19 @@
             } else { 
-                if (ten > 0 && five > 0) {
+                if (ten> 0&&five>0) {
                     ten--;
                     five--;
-                } else if (five >= 3) {
-                    five -= 3;
-                } else {
-                    return false;
+                } else if (five>= 3) {
+                    five-= 3;
+                ten++;
                 }
-            }
-        }
-        
-        return true;
-    }
-}
+                five--;
+                five++;
+            } else if (bill==10) {
+                if (five == 0) {
+                    return false;
+        for (int bill : bills) {
+            if (bill==5) {
+        int five = 0;
+        int ten = 0;    
+    public boolean lemonadeChange(int[] bills) {
+class Solution {
