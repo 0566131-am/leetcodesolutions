@@ -1,5 +1,19 @@
-class Solution {
-    public int[] fullBloomFlowers(int[][] flowers, int[] people) {
+        Arrays.sort(sortedPeopleIndices, (a, b) -> Integer.compare(people[a], people[b]));
         
+        int[] answer = new int[m];
+        int currentFlowers = 0;
+        for (int index : sortedPeopleIndices) {
+            int personTime = people[index];
+            while (!timeline.isEmpty() && timeline.firstKey() <= personTime) {
+                currentFlowers += timeline.pollFirstEntry().getValue();
+            }
+            
+            answer[index] = currentFlowers;
+        }
+        
+        return answer;
     }
 }
+        }
+            sortedPeopleIndices[i] = i;
+        for (int i = 0; i < m; i++) {
