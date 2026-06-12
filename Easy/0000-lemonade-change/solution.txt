@@ -1,5 +1,15 @@
-class Solution {
-    public boolean lemonadeChange(int[] bills) {
+            } else { 
+                if (ten > 0 && five > 0) {
+                    ten--;
+                    five--;
+                } else if (five >= 3) {
+                    five -= 3;
+                } else {
+                    return false;
+                }
+            }
+        }
         
+        return true;
     }
 }
