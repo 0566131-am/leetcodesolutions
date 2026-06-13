@@ -1,0 +1,19 @@
+            for (int i = 0; i < word.length(); i++) {
+                char c = word.charAt(i);
+                totalWeight += weights[c - 'a'];
+            }
+            int remainder = totalWeight % 26;
+            char mappedChar = (char) ('z' - remainder);
+            result.append(mappedChar);
+        }
+        
+        return result.toString();
+        
+    }
+
+            int totalWeight = 0;
+        for (String word : words) {
+        
+        StringBuilder result = new StringBuilder();
+    public String mapWordWeights(String[] words, int[] weights) {
+class Solution {
