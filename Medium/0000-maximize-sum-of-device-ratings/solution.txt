@@ -1,0 +1,14 @@
+import java.util.Arrays;
+
+class Solution {
+    public long maxRatings(int[][] units) {
+        int m = units.length;
+        long baseSum = 0;
+        
+        // Arrays to store minimums for each device
+        int[] min1 = new int[m];
+        int[] min2 = new int[m];
+        
+        for (int i = 0; i < m; i++) {
+            Arrays.sort(units[i]);
+            min1[i] = units[i][0];
