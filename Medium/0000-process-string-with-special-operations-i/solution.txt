@@ -1,5 +1,13 @@
-class Solution {
-    public String processStr(String s) {
+                result.append(result.toString());
+            } else if (ch == '%') {
+                // Reverse the current result
+                result.reverse();
+            } else {
+                // Regular lowercase letter: append to result
+                result.append(ch);
+            }
+        }
         
+        return result.toString();
     }
 }
