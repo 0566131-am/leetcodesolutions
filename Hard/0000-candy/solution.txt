@@ -1,5 +1,14 @@
+        }
+            }
+                left[i] = left[i - 1] + 1;
+            if (ratings[i] > ratings[i - 1]) {
+        for (int i = 1; i < n; i++) {
+
+        Arrays.fill(right, 1);
+        Arrays.fill(left, 1);
+
+        int[] right = new int[n];
+        int n = ratings.length;
+        int[] left = new int[n];
 class Solution {
     public int candy(int[] ratings) {
-        
-    }
-}
