@@ -1,5 +1,14 @@
-class Solution {
-    public List<String> letterCombinations(String digits) {
-        
-    }
-}
+            if i == len(digits):
+                res.append("".join(combinations))
+                return
+            
+            # 2. Get the correct string of letters for the current digit
+            # Note: You need to index into digits using 'i' -> digits[i]
+            for ch in d1[digits[i]]:
+                combinations.append(ch)       # 1. Choose
+                backtracking(i + 1, combinations) # 2. Explore next digit
+                combinations.pop()             # 3. Unchoose (backtrack)
+                
+        # 3. Kick off the recursion
+        backtracking(0, [])
+        return res
