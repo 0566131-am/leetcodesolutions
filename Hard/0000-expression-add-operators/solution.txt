@@ -1,3 +1,5 @@
-class Solution:
-    def addOperators(self, num: str, target: int) -> List[str]:
+class Solution {
+    public List<String> addOperators(String num, int target) {
         
+    }
+}
