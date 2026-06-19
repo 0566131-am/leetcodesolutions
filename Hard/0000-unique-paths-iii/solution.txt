@@ -1,5 +1,14 @@
-class Solution {
-    public int uniquePathsIII(int[][] grid) {
         
+        // Explore all 4 directions
+        int paths = 0;
+        paths += backtrack(grid, r + 1, c, remain - 1); // Down
+        paths += backtrack(grid, r - 1, c, remain - 1); // Up
+        paths += backtrack(grid, r, c + 1, remain - 1); // Right
+        paths += backtrack(grid, r, c - 1, remain - 1); // Left
+        
+        // Unmark the current cell (Backtrack)
+        grid[r][c] = temp;
+        
+        return paths;
     }
 }
