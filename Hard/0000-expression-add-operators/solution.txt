@@ -1,4 +1,10 @@
-class Solution:
-    def addOperators(self, num: str, target: int) -> List[str]:
-        
-        
+                    backtrack(
+                        i + 1, 
+                        current_val - prev_term + (prev_term * part_val), 
+                        prev_term * part_val, 
+                        path_segments
+                    )
+                    path_segments.pop()
+
+        backtrack(0, 0, 0, [])
+        return results
