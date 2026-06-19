@@ -1,5 +1,14 @@
-class Solution {
-    public List<List<String>> solveNQueens(int n) {
+class Solution:
+    def solveNQueens(self, n: int) -> List[List[str]]:
+        res = []
+        board = [["."] * n for _ in range(n)]
+        cols = set()
+        posDiag = set() 
+        negDiag = set() 
         
-    }
-}
+        def backtracking(r):
+            if r == n:
+                copy = ["".join(row) for row in board]
+                res.append(copy)
+                return
+            for c in range(n):
