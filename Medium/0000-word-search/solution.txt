@@ -1,6 +1,14 @@
-class Solution {
-    public boolean exist(char[][] board, String word) {
+        board[r][c] = '#'; 
         
+        // Explore all 4 adjacent directions
+        boolean found = dfs(board, word, r + 1, c, index + 1) || // Down
+                        dfs(board, word, r - 1, c, index + 1) || // Up
+                        dfs(board, word, r, c + 1, index + 1) || // Right
+                        dfs(board, word, r, c - 1, index + 1);   // Left
         
+        // Unmark the cell (Backtrack)
+        board[r][c] = temp;
+        
+        return found;
     }
 }
