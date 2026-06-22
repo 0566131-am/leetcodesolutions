@@ -1,5 +1,14 @@
-class Solution {
-    public int maxIceCream(int[] costs, int coins) {
+                // Buy all of them
+                iceCreamCount += freq[price];
+                coins -= totalCostForBars;
+            } else {
+                // Buy as many as possible with remaining coins
+                int countToBuy = coins / price;
+                iceCreamCount += countToBuy;
+                break; // Out of coins
+            }
+        }
         
+        return iceCreamCount;
     }
 }
