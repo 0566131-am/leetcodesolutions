@@ -1,6 +1,12 @@
-class Solution {
-    public int maxNumberOfBalloons(String text) {
+                case 'n': n++; break;
+            }
+        }
         
+        // 'l' and 'o' are needed twice per word, so divide their counts by 2
+        l /= 2;
+        o /= 2;
         
+        // The bottleneck (minimum count) determines the total words we can form
+        return Math.min(b, Math.min(a, Math.min(l, Math.min(o, n))));
     }
 }
