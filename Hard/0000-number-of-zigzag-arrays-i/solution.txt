@@ -1,5 +1,14 @@
-class Solution {
-    public int zigZagArrays(int n, int l, int r) {
+            }
+            
+            dp = nextDp;
+        }
         
+        // Sum up all valid sequences of length n
+        long totalWays = 0;
+        for (int x = 0; x < numValues; x++) {
+            totalWays = (totalWays + dp[0][x] + dp[1][x]) % MOD;
+        }
+        
+        return (int) totalWays;
     }
 }
