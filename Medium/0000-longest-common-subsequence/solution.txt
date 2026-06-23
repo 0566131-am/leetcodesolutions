@@ -1,14 +1,14 @@
-        if (i == text1.length() || j == text2.length()) {
-            return 0;
         }
 
         if (text1.charAt(i) == text2.charAt(j)) {
-            return 1 + backtracking(text1, text2, i + 1, j + 1);
+            memo[i][j] = 1 + backtracking(text1, text2, i + 1, j + 1);
         } else {
-            return Math.max(
+            memo[i][j] = Math.max(
                 backtracking(text1, text2, i + 1, j), 
                 backtracking(text1, text2, i, j + 1)
             );
         }
+
+        return memo[i][j];
     }
 }
