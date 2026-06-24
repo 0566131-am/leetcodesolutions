@@ -1,14 +1,14 @@
+class Solution {
+    private static final int MOD = 1_000_000_007;
 
-    private long[][] multiply(long[][] A, long[][] B, int size) {
-        long[][] C = new long[size][size];
-        for (int i = 0; i < size; i++) {
-            for (int k = 0; k < size; k++) {
-                if (A[i][k] == 0) continue;
-                for (int j = 0; j < size; j++) {
-                    C[i][j] = (C[i][j] + A[i][k] * B[k][j]) % MOD;
-                }
-            }
-        }
-        return C;
-    }
-}
+    public int zigZagArrays(int n, int l, int r) {
+        int m = r - l + 1;
+        int size = 2 * m;
+
+        // Base case for n = 1
+        if (n == 1) return m;
+
+        // Construct the transition matrix T
+        long[][] T = new long[size][size];
+        
+        // Block N: dp[i][y][0] = sum(dp[i-1][x][1]) for x > y
