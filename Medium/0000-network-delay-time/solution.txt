@@ -1,3 +1,6 @@
-int networkDelayTime(int** times, int timesSize, int* timesColSize, int n, int k){
-
+class Solution {
+    public int networkDelayTime(int[][] times, int n, int k) {
+        
+        
+    }
 }
