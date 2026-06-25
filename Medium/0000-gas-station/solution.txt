@@ -1,6 +1,10 @@
-class Solution {
-    public int canCompleteCircuit(int[] gas, int[] cost) {
-        
-        
+
+            if (currentTank < 0) {
+                startingStation = i + 1;
+                currentTank = 0;
+            }
+        }
+
+        return totalGas >= totalCost ? startingStation : -1;
     }
 }
