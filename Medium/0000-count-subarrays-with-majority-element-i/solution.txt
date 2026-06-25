@@ -1,5 +1,12 @@
-class Solution {
-    public int countMajoritySubarrays(int[] nums, int target) {
+                    targetCount++;
+                }
+                int len = j - i + 1;
+                if (targetCount * 2 > len) {
+                    totalSubarrays++;
+                }
+            }
+        }
         
+        return totalSubarrays;
     }
 }
