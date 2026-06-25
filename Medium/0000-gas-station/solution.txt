@@ -1,6 +1,6 @@
 class Solution {
-    public int networkDelayTime(int[][] times, int n, int k) {
+    public int canCompleteCircuit(int[] gas, int[] cost) {
+        
         
     }
-        
 }
