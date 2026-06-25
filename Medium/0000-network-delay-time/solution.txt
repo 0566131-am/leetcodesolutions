@@ -1,6 +1,10 @@
-class Solution {
-    public int networkDelayTime(int[][] times, int n, int k) {
-        
-        
-    }
-}
+        while pq:
+            time, node = heapq.heappop(pq)
+            
+            if node not in dist:
+                dist[node] = time
+                for neighbor, weight in graph[node]:
+                    if neighbor not in dist:
+                        heapq.heappush(pq, (time + weight, neighbor))
+                        
+        return max(dist.values()) if len(dist) == n else -1
