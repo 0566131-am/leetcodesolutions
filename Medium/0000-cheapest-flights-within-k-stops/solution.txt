@@ -1,14 +1,15 @@
-        
-        for i in range(n):
-            reachable_count = 0
-            for j in range(n):
-                if i != j and dist[i][j] <= distanceThreshold:
-                    reachable_count += 1
+                # Explore neighbors
+                for neighbor, price in graph[curr_city]:
+                    next_cost = curr_cost + price
+                    
+                    # Optimization: Only proceed if this path is cheaper 
+                    than 
+                    # any previously recorded path to this neighbor
+                    if next_cost < prices[neighbor]:
+                        prices[neighbor] = next_cost
+                        queue.append((neighbor, next_cost))
             
-            # Using '<=' automatically updates to a greater city ID 
-            # in case of a tie because we are iterating from 0 to n-1
-            if reachable_count <= min_reachable_count:
-                min_reachable_count = reachable_count
-                best_city = i
-                
-        return best_city
+            stops += 1
+            
+        # Return the final cheapest price to dst if reachable, else -1
+        return prices[dst] if prices[dst] != float('inf') else -1
