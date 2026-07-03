@@ -1,7 +1,6 @@
                 int cost = edge[1];
                 
-                // Only traverse if the edge cost is at least our 
-                binary search threshold
+                // Only traverse if the edge cost is at least our binary search threshold
                 if (cost >= minEdgeThreshold) {
                     if (dp[u] + cost < dp[v]) {
                         dp[v] = dp[u] + cost;
