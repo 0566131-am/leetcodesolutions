@@ -1,5 +1,15 @@
-class Solution {
-    public int minScore(int n, int[][] roads) {
+                    
+                    // Update the minimum score seen in this component
+                    minScore = Math.min(minScore, distance);
+                    
+                    if (!visited[nextNode]) {
+                        visited[nextNode] = true;
+                        queue.offer(nextNode);
+                    }
+                }
+            }
+        }
         
+        return minScore;
     }
 }
