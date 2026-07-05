@@ -1,0 +1,16 @@
+                int nc = c + dir[1];
+
+                if (nr >= 0 && nr < n && nc >= 0 && nc < n && 
+                !visited[nr][nc]) {
+                    visited[nr][nc] = true;
+                    // The safeness of the path to the next cell is 
+                    limited by the minimum seen so far
+                    maxHeap.offer(new int[]{Math.min(maxSafe, 
+                    safeness[nr][nc]), nr, nc});
+                }
+            }
+        }
+
+        return 0;
+    }
+}
