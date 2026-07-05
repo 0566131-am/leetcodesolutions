@@ -1,0 +1,12 @@
+            if i<pivot:
+            elif i>pivot:
+            else:
+        return less+p+more
+                 less.append(i)
+                more.append(i)
+                p.append(i)
+        for i in nums:
+        p=[]
+        more=[]
+        less=[]
+        
