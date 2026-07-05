@@ -1,5 +1,28 @@
-class Solution {
-    public int[] pathsWithMaxScore(List<String> board) {
+                    
+                    // If neighbor is valid and reachable
+                    if (ni < n && nj < n && count[ni][nj] > 
+                    0) {
+                        if (dp[ni][nj] > maxScore) {
+                            maxScore = dp[ni][nj];
+                            paths = count[ni][nj];
+                        } else if (dp[ni][nj] == maxScore) {
+                            paths = (paths + count[ni][nj]) 
+                            % MOD;
+                        }
+                    }
+                }
+                
+                // If this cell is reachable from at least 
+                one valid path
+                if (maxScore != -1) {
+                    int currentVal = (c == 'E') ? 0 : (c - 
+                    '0');
+                    dp[i][j] = maxScore + currentVal;
+                    count[i][j] = paths;
+                }
+            }
+        }
         
+        return new int[]{dp[0][0], count[0][0]};
     }
 }
