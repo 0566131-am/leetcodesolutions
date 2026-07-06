@@ -1,5 +1,17 @@
-class Solution {
-    public int removeCoveredIntervals(int[][] intervals) {
+            return a[0] - b[0];
+        });
         
+        int remainingCount = 0;
+        int maxEnd = 0;
+        
+        for (int[] interval : intervals) {
+            // If the current interval's end is greater than maxEnd, it's not covered
+            if (interval[1] > maxEnd) {
+                remainingCount++;
+                maxEnd = interval[1]; // Update the furthest reach
+            }
+        }
+        
+        return remainingCount;
     }
 }
