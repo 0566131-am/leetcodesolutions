@@ -1,5 +1,18 @@
-class Solution {
-    public long sumAndMultiply(int n) {
+                reversedX = reversedX * 10 + digit;
+                sum += digit;
+            }
+            n /= 10;
+        }
         
-    }
-}
+        // Step 2: Reverse it back to get the original order for x
+        long x = 0;
+        while (n > 0) {
+            int digit = n % 10;
+            if (digit != 0) {
+        original order)
+    public long sumAndMultiply(int n) {
+        long reversedX = 0;
+        long sum = 0;
+        
+        // Step 1: Extract non-zero digits (this reverses their 
+class Solution {
