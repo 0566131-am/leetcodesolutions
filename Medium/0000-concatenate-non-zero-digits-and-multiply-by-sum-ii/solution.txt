@@ -1,5 +1,14 @@
-class Solution {
-    public int[] sumAndMultiply(String s, int[][] queries) {
-        
+        int low = 0, high = list.size() - 1;
+        int ans = -1;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            if (list.get(mid) <= target) {
+                ans = mid;
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+        return ans;
     }
 }
