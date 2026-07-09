@@ -13,8 +13,3 @@ class Solution {
         p.add(nums[i]);
        }
        return Stream.of(less,p,more)
-       .flatMap(List::stream)
-       .mapToInt(Integer::intValue)
-       .toArray();
-    }
-}
