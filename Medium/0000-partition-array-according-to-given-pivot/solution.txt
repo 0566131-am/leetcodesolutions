@@ -1,16 +1,15 @@
-     else if(nums[i]<pivot){
-       less.add(nums[i]);
-        }else{
-      
-       p.add(nums[i]);
-     }
-     Stream.of(less,more,p)
-     .flatMap(List::stream)
-     .mapToInt(Integer::intValue)
-     }
-       more.add(nums[i]);
-       if(nums[i]>pivot)
-     for(int i=0;i<nums[i];i++){
-        List <Integer>more=new ArrayList<>();
-        List <Integer>p=new ArrayList<>();
-     .toArray();
+       List<Integer> more=new ArrayList<>();
+       List<Integer> p=new ArrayList<>();
+       for(int i=0;i<nums.length;i++){
+        if(nums[i]<pivot)
+        less.add(nums[i]);
+        else if (nums[i]>pivot)
+        more.add(nums[i]);
+        else
+        p.add(nums[i]);
+       }
+       List<Integer> less=new ArrayList<>();
+       return Stream.of(less,p,more)
+       .flatMap(List::stream)
+       .mapToInt(Integer::intValue)
+       .toArray();
