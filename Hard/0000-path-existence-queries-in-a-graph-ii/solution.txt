@@ -1,5 +1,15 @@
-class Solution {
-    public int[] pathExistenceQueries(int n, int[] nums, int maxDiff, int[][] queries) {
-        
+            int curr = rU;
+            for (int j = LOG - 1; j >= 0; j--) {
+                if (up[curr][j] < rV) {
+                    curr = up[curr][j];
+                    steps += (1 << j);
+                }
+            }
+
+            // One more jump is needed to finally reach or cross rV
+            ans[q] = steps + 1;
+        }
+
+        return ans;
     }
 }
