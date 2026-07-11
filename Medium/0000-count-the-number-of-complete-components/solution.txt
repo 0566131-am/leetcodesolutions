@@ -1,14 +1,15 @@
-            int v = edge[1];
-            int u = edge[0];
-        for (int[] edge : edges) {
-        
-        }
-            adj.add(new ArrayList<>());
-        for (int i = 0; i < n; i++) {
-        List<List<Integer>> adj = new ArrayList<>();
-        int[] degree = new int[n];
+import java.util.*;
 
 class Solution {
     public int countCompleteComponents(int n, int[][] edges) {
         // 1. Build the adjacency list and track vertex degrees
-import java.util.*;
+        List<List<Integer>> adj = new ArrayList<>();
+        int[] degree = new int[n];
+        for (int i = 0; i < n; i++) {
+            adj.add(new ArrayList<>());
+        }
+        
+        for (int[] edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            adj.get(u).add(v);
