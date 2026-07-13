@@ -1,5 +1,14 @@
-class Solution {
-    public List<Integer> sequentialDigits(int low, int high) {
+                // Optimization: Only push to the queue if it hasn't 
+                exceeded 'high'
+                if (nextNum <= high) {
+                    queue.add(nextNum);
+                }
+            }
+        }
         
+        // The queue inherently processes numbers by length (12, 23... 
+        then 123, 234...)
+        // So the result list is already sorted!
+        return result;
     }
 }
