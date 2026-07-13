@@ -6,6 +6,6 @@ class Solution {
     sum=sum*10+digit;
     x=x/10;
        }
-    }
        return sum;
+    }
 }
