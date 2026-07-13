@@ -1,5 +1,7 @@
 class Solution {
     public int reverse(int x) {
+        java.util.Collections.reverse(x);
+        return x;
         
     }
 }
