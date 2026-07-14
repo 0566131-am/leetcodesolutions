@@ -1,5 +1,14 @@
-class Solution {
-    public int subsequencePairCount(int[] nums) {
-        
+                }
+            }
+            dp = nextDp;
+        }
+
+        long totalPairs = 0;
+        // We only sum up cases where g1 == g2 and both are non-empty (> 0)
+        for (int g = 1; g <= maxVal; g++) {
+            totalPairs = (totalPairs + dp[g][g]) % MOD;
+        }
+
+        return (int) totalPairs;
     }
 }
