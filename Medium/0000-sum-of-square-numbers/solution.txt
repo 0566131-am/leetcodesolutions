@@ -1,5 +1,15 @@
-class Solution {
-    public boolean judgeSquareSum(int c) {
-        
-    }
-}
+                
+            }
+                right--;
+            else{
+            {
+            else if(d>c)
+            }
+            if(d==c){
+                return true;
+            long d=left*left+right*right;
+        long right=(long)Math.sqrt(c);
+        while(left<=right){
+                left++;
+            }
+        }
