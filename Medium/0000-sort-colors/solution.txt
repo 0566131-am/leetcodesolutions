@@ -1,8 +1,3 @@
-        }
-        else{
-            swap(nums,mid,high);
-            high--;
-        }
             mid++;
         else if(nums[mid]==1){
         }
@@ -12,4 +7,8 @@
         if(nums[mid]==0){
        while(mid<=high){
        int mid=0;
-        
+       int high=n-1;
+       int n=nums.length;
+       int low=0;
+class Solution {
+    public void sortColors(int[] nums) {
