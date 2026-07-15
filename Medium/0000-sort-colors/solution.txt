@@ -1,6 +1,15 @@
-class Solution {
-public:
-    void sortColors(vector<int>& nums) {
+        }
+        else{
+            swap(nums,mid,high);
+            high--;
+        }
+            mid++;
+        else if(nums[mid]==1){
+        }
+            mid++;
+            low++;
+           swap(nums,low,mid);
+        if(nums[mid]==0){
+       while(mid<=high){
+       int mid=0;
         
-    }
-};
