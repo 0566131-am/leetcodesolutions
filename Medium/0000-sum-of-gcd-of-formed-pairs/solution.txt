@@ -1,0 +1,14 @@
+        
+        }
+            prefixGcd[i] = gcd(nums[i], currentMax);
+            currentMax = Math.max(currentMax, nums[i]);
+        for (int i = 0; i < n; i++) {
+        int currentMax = 0;
+        // Step 1: Compute prefixGcd array
+        
+        int n = nums.length;
+        int[] prefixGcd = new int[n];
+
+class Solution {
+    public long gcdSum(int[] nums) {
+import java.util.Arrays;
