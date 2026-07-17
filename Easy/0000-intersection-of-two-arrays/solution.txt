@@ -9,8 +9,9 @@
             result[i]=res.get(i);
         }
         return result;
-    }
         }
             set.add(num);
         for(int num:nums1){
         HashSet<Integer> set =new HashSet<>();
+        ArrayList<Integer> res=new ArrayList<>();
+    public int[] intersection(int[] nums1, int[] nums2) {
