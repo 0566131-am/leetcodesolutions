@@ -1,18 +1,15 @@
 {
-        int min=nums[0];
-        for(int i=0;i<nums.length;i++)
     if(nums[i]<min){
         min=nums[i];
     }
 }
 private int gcd (int a,int b){
+return gcd(min,max);
+    }
+        for(int i=0;i<nums.length;i++)
  if(b==0){
     return a;
  }
-return gcd(min,max);
  return gcd(b,a%b);
-    }
-        }
-            }
 }
 }
