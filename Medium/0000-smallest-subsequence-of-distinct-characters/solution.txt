@@ -1,3 +1,18 @@
-class Solution:
-    def smallestSubsequence(self, s: str) -> str:
+            subsequence, skip it
+            if (visited[c - 'a']) {
+            
+            // If the character is already in our 
+            char c = s.charAt(i);
+        for (int i = 0; i < s.length(); i++) {
         
+        StringBuilder stack = new StringBuilder();
+        boolean[] visited = new boolean[26];
+        the result stack
+        // Track whether a character is already included in 
+        
+        }
+            lastIndex[s.charAt(i) - 'a'] = i;
+        for (int i = 0; i < s.length(); i++) {
+        int[] lastIndex = new int[26];
+                continue;
+        // Track the last seen index of each character
