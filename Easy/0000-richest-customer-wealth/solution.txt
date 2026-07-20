@@ -1,4 +1,3 @@
-        for(int i=0;i<rows;i++){
 
 
         
@@ -9,10 +8,11 @@
             }
 
         return maxx;
-        int cols=accounts[0].length;
-        int rows=accounts.length;
-    public int maximumWealth(int[][] accounts) {
            maxx=Math.max(c,maxx);
-class Solution {
 
+        for(int i=0;i<rows;i++){
+        int cols=accounts[0].length;
          int maxx=0;
+        int rows=accounts.length;
+class Solution {
+    public int maximumWealth(int[][] accounts) {
