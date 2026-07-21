@@ -1,5 +1,17 @@
-class Solution {
-    public int longestConsecutive(int[] nums) {
-        
+                continue; // skip duplicate
+            }
+
+            if (nums[i] == nums[i - 1] + 1) {
+                c++;
+            } else {
+                c = 1;
+            }
+
+            if (c > m) {
+                m = c;
+            }
+        }
+
+        return m;
     }
 }
