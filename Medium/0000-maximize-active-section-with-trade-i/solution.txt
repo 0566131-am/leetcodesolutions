@@ -1,0 +1,16 @@
+
+        int maxDelta = 0;
+
+        // Iterate through blocks and look for '1'-blocks surrounded by '0'-blocks
+        for (int k = 1; k < types.size() - 1; k++) {
+            if (types.get(k) == '1' && types.get(k - 1) == '0' && types.get(k + 1) 
+            == '0') {
+                int leftZeros = lengths.get(k - 1);
+                int rightZeros = lengths.get(k + 1);
+                maxDelta = Math.max(maxDelta, leftZeros + rightZeros);
+            }
+        }
+
+        return initialOnes + maxDelta;
+    }
+}
