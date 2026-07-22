@@ -1,0 +1,17 @@
+                int jRight = idR - 1;
+                if (segs.get(jRight)[0] == 1 && segs.get
+                (jRight)[1] >= l) {
+                    int lenR = r - segs.get(idR)[1] + 1;
+                    int lenL = (jRight - 1 == idL) ? (segs.get
+                    (idL)[2] - l + 1) : segs.get(jRight - 1)
+                    [3];
+                    maxGain = Math.max(maxGain, lenL + lenR);
+                }
+            }
+
+            ans.add(totalOnes + maxGain);
+        }
+
+        return ans;
+    }
+}
