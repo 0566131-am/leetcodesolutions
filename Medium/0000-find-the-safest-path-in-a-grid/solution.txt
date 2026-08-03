@@ -1,5 +1,17 @@
-class Solution {
-    public int maximumSafenessFactor(List<List<Integer>> grid) {
-        
+            if (safeness < maxSafeness[r][c]) continue;
+
+            for (int[] d : DIRS) {
+                int nr = r + d[0], nc = c + d[1];
+                if (nr >= 0 && nr < n && nc >= 0 && nc < n) {
+                    int nextSafeness = Math.min(safeness, dist[nr][nc]);
+                    if (nextSafeness > maxSafeness[nr][nc]) {
+                        maxSafeness[nr][nc] = nextSafeness;
+                        maxHeap.offer(new int[]{nextSafeness, nr, nc});
+                    }
+                }
+            }
+        }
+
+        return 0;
     }
 }
