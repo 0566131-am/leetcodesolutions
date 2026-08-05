@@ -1,0 +1,17 @@
+                result.add(i);
+            }
+        }
+
+        return result;
+    }
+
+    private void dfs(int node, List<List<Integer>> adj, boolean[] 
+    isSuspicious) {
+        isSuspicious[node] = true;
+        for (int neighbor : adj.get(node)) {
+            if (!isSuspicious[neighbor]) {
+                dfs(neighbor, adj, isSuspicious);
+            }
+        }
+    }
+}
